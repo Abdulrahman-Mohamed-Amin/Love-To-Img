@@ -1,0 +1,40 @@
+
+.like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.like .like_cont {
+  width: 300px;
+  margin: auto;
+  height: 500px;
+}
+.img_box{
+  overflow: hidden;
+  position: relative;
+}
+.like_cont img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px rgba(0 0 0 / 0.3);
+}
+.img_box i{
+  position: absolute;
+  font-size: 25px;
+  animation: like 1s linear infinite;
+  transform: translate(-50% , -50%);
+}
+
+@keyframes like {
+  0%
+  {
+    opacity: 1;
+    font-size: 30px ; 
+  }
+  100%
+  {
+    opacity: 0;
+    font-size: 200px ; 
+  }
+}
